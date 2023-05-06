@@ -1,0 +1,35 @@
+.search {
+  margin-left: auto;
+  display: flex;
+  width: 540px;
+  justify-content: flex-start;
+
+  &__line-svg {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  &__line {
+    position: relative;
+  }
+  &__line-input {
+    width: 100%;
+    height: 56px;
+    border: gray;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 38px 16px;
+    cursor: pointer;
+  }
+  &__line-input::placeholder {
+    color: gray;
+    opacity: 0.5;
+    font-weight: 300;
+  }
+  &__line-input:focus {
+    outline: 0;
+  }
+}
